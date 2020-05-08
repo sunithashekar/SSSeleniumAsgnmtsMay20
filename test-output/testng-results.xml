@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15297" started-at="2020-05-07T05:05:21Z" finished-at="2020-05-07T05:05:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15297" started-at="2020-05-07T05:05:21Z" finished-at="2020-05-07T05:05:36Z">
+      <class name="com.training.sanity.tests.LoginTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@675d3402]" name="setUpBeforeClass" is-config="true" duration-ms="11693" started-at="2020-05-07T01:05:21Z" finished-at="2020-05-07T01:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="verifyLoginbtn()[pri:1, instance:com.training.sanity.tests.LoginTests@675d3402]" name="verifyLoginbtn" duration-ms="1963" started-at="2020-05-07T01:05:33Z" finished-at="2020-05-07T01:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginbtn -->
+        <test-method status="PASS" signature="verifyCatalog()[pri:2, instance:com.training.sanity.tests.LoginTests@675d3402]" name="verifyCatalog" duration-ms="937" started-at="2020-05-07T01:05:35Z" finished-at="2020-05-07T01:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCatalog -->
+        <test-method status="PASS" signature="verifyClickingofCatagory()[pri:3, instance:com.training.sanity.tests.LoginTests@675d3402]" name="verifyClickingofCatagory" duration-ms="667" started-at="2020-05-07T01:05:36Z" finished-at="2020-05-07T01:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingofCatagory -->
+      </class> <!-- com.training.sanity.tests.LoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
