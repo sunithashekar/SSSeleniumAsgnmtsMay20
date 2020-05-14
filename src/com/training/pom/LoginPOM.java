@@ -68,8 +68,50 @@ public class LoginPOM {
 	@FindBy(xpath="//td[text() ='uniforms']//preceding-sibling::td[@class='text-center']")
 	WebElement uniform;
 	
-	@FindBy(xpath="//button[@type=\"button\"]")
+	@FindBy(xpath="//button[@type='button']")
 	WebElement deletebtn;
+	
+	//new TC
+	@FindBy(xpath = "//i[@class ='fa fa-shopping-cart fa-fw']")   
+	WebElement cart;
+	
+	@FindBy(xpath="//a[contains(text(),'Orders')]")
+	WebElement doClickOrder;
+	
+
+	@FindBy(xpath="//td[contains(text(),'Sujatha Siva')]")
+	WebElement doSelectCust;
+	
+	@FindBy(xpath="//td[contains(text(),'Sujatha Siva')]//preceding-sibling::td[@class='text-center']")
+	WebElement doSelectCheckbox;
+	
+	@FindBy(xpath="//i[@class ='fa fa-pencil']")
+	WebElement doSelectEdit;
+	
+	@FindBy(id = "button-customer")
+	WebElement doClickCont;
+	
+	@FindBy(id = "input-product")
+	WebElement chooseProduct;
+	
+	@FindBy(name = "quantity")
+	WebElement enterQuant;
+	
+	@FindBy(id = "button-cart")
+	WebElement clickbtnCart;
+	
+	@FindBy(id = "button-payment-address")
+	WebElement clickbtnCartCont2;
+	
+	@FindBy(id = "button-save")
+	WebElement clicksave;
+	
+	@FindBy(css = "div.alert.alert-danger")  
+	WebElement displayMesg;
+	
+	
+	
+
 	
 	public boolean clickLoginbtn(String un,String pd) {
 	this.userName.clear();
@@ -116,5 +158,30 @@ public class LoginPOM {
 	String msg= driver.findElement(By.xpath("//div[@class = 'alert alert-success']")).getText();
 		return msg;
 	}
+	
+	
+	public String doClickCart() {
+		act = new Actions(driver);
+		act.moveToElement(cart).build().perform();
+		doClickOrder.click();
+		doSelectCheckbox.click();
+		doSelectEdit.click();
+		doClickCont.click();
+		chooseProduct.sendKeys("Blazer Girls(7-8)");
+		enterQuant.sendKeys("2");
+		clickbtnCart.click();
+		clickbtnCartCont2.click();
+		clicksave.click();
+	//	robo.keyPress(KeyEvent.VK_UP);
+//		robo.keyRelease(KeyEvent.VK_UP);
+		String s1 = displayMesg.getText();
+		return s1;
+		
+		
+		
+		
+	}
+	
+	
 	
 }

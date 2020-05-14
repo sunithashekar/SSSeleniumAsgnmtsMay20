@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
+import com.training.pom.HomePage;
 import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
@@ -27,6 +28,7 @@ public class LoginTests {
 	private static LoginPOM loginPOM;
 	private static Properties properties;
 	private static ScreenShot screenShot;
+	
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -83,11 +85,12 @@ public class LoginTests {
   
    }
 
-	
-		@AfterClass
-		public void tearDown() throws Exception {
-		Thread.sleep(1000);
-		driver.quit();
-	}
+       
+    
+	@AfterClass
+	public void tearDown() throws Exception {
+    Thread.sleep(1000);
+    driver.quit();
+    }
 	
 }	
