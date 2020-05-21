@@ -58,9 +58,9 @@ public class LoginMultipleValuesTest {
 	
 	@Test(dataProvider="inputs")
 	public void testMethod1(String userName, String password) {
-		loginPOM.sendUserName(userName);
-		loginPOM.sendPassword(password);
-		loginPOM.clickLoginBtn(); 
+//		loginPOM.sendUserName(userName);
+//		loginPOM.sendPassword(password);
+//		loginPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot(userName);
 	}
 	

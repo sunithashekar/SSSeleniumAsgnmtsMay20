@@ -6,6 +6,7 @@
       <classes>
          <class name = "com.training.sanity.tests.LoginTests" />
           <class name = "com.training.sanity.tests.HomePageTests" />
+          <class name = "com.training.sanity.tests.AddCatagProductXLtest" />
          
       </classes>
    </test>

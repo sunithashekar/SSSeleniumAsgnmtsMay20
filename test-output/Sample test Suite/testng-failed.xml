@@ -6,11 +6,16 @@
       <class name="com.training.sanity.tests.LoginTests">
         <methods>
           <include name="setUpBeforeClass"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="validLoginTest"/>
+          <include name="verifyCartEdit"/>
         </methods>
       </class> <!-- com.training.sanity.tests.LoginTests -->
+      <class name="com.training.sanity.tests.HomePageTests">
+        <methods>
+          <include name="verifyCartEdit"/>
+          <include name="tearDown"/>
+          <include name="setUpBeforeClass"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.HomePageTests -->
     </classes>
   </test> <!-- Sample test(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->
